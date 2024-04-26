@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  <title>Hedda-template</title>
+</head>
+
+<body>
+  <!-- navbar section  -->
+  <nav class="bg-white border-gray-200">
+    <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-4 p-2">
+      <a href="" class="flex items-center">
+        <img src="https://assets.website-files.com/64426c1f54e5450712b7713b/64426e865588e4677c26dfc9_logo.svg"
+          class="h-8 mr-3" alt="" />
+
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <!--  -->
+      <div class=" md:hidden z md:w-auto styles  hidden" id="navbar-default">
+        <div class=" side">
+          <div class="">
+            <h3 class="text-xl ">PAGES</h3>
+          </div>
+          <div class="flex flex-col gap-x-2 gap-y-4 mt-8">
+            <a class="flex flex-col mb-1" href="">
+              <div class="text-sm">HOME</div>
+            </a>
+            <a class="flex flex-col mb-1" href="">
+              <div class="text-sm ">SERVICES</div>
+            </a>
+            <a class="flex flex-col mb-1" href="">
+              <div class="text-sm">ABOUT</div>
+            </a>
+            <a class="flex flex-col mb-1" href="">
+              <div class="text-sm">JOBS</div>
+            </a>
+            <a class="flex flex-col mb-1" href="">
+              <div class="text-sm ">CONTACT</div>
+            </a>
+            <div class=" mb-2">
+              <a class="bg-white rounded-md text-sm p-perfect text-black" href="">MORE TEMPLATES <i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden w-full md:block ml-2  md:w-auto" id="navbar-default">
+        <ul
+          class="font-normal text-xs  flex flex-col md: mt-4 border border-gray-100 bg-gray-100 rounded-lg  md:flex-row md:space-x-4 md:border-0 md:bg-white">
+          <li>
+            <a href="#" data-replace="SERVICES" class=" anx block py-2 pl-3 pr-4 rounded-2xl tracking-wide text-gray-900 bg-gray-100"><span class="x">SERVICES</span></a>
+          </li>
+          <li>
+            <a href="#" data-replace="WORK" class=" anx block py-2 pl-3 pr-4 rounded-2xl tracking-wide  text-gray-900 bg-gray-100"><span class="x">WORK</span></a>
+          </li>
+          <li>
+            <a href="#" data-replace="ABOUT" class=" anx block py-2 pl-3 pr-4 rounded-2xl tracking-wide text-gray-900 bg-gray-100"><span class="x">ABOUT</span></a>
+          </li>
+          <li>
+            <a href="#" data-replace="BLOG" class=" anx block py-2 pl-3 pr-4 rounded-2xl tracking-wide text-gray-900 bg-gray-100"><span class="x">BLOG</span></a>
+          </li>
+          <a id="dropdownLargeButton" data-replace="PAGES" data-dropdown-toggle="dropdownLarge"
+            class="anx cursor-pointer text-black block py-2 pl-3 pr-4 rounded-2xl tracking-wide  bg-gray-100"
+            type="button"><span class="x">PAGES</span> <i class="fa-solid fa-arrow-down-long"></i></a>
+
+          <!-- Dropdown menu -->
+          <div class="z">
+          <div id="dropdownLarge"
+            class="z-10 hidden cursor-pointer  p25 bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <div class="rounded-lg colors">
+              <div class="p-6">
+                <div class="grid gap-x-4 gap-y-4 md:grid-cols-14 ">
+                  <div class=" side">
+                    <div class="">
+                      <h3 class="text-xl ">PAGES</h3>
+                    </div>
+                    <div class="flex flex-col gap-x-2 gap-y-4 mt-8">
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm">HOME</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm ">SERVICES</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm">ABOUT</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm">JOBS</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm ">CONTACT</div>
+                      </a>
+                      <div class=" mb-2">
+                        <a class="bg-white rounded-3xl text-sm p-3 text-black" href="">MORE TEMPLATES <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="">
+                      <h3 class="text-xl">CMS</h3>
+                    </div>
+                    <div class="flex flex-col gap-x-2 gap-y-4 mt-8">
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm">WORK</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm ">WORK SINGLE</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm">BLOG</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm ">BLOG SINGLE</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm">SHOP</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm ">SHOP SINGLE</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="">
+                      <h3 class="text-xl">UTILITY </h3>
+                    </div>
+                    <div class="flex flex-col gap-x-2 gap-y-4 mt-8">
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm ">404 ERROR PAGE</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm ">PASSWORD PROTECTED</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm ">
+                          STYLEGUIDE</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm ">
+                          LICENSING</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm ">
+                          CHANGELOG
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="">
+                      <h3 class="text-xl">SOCIALS</h3>
+                    </div>
+                    <div class="flex flex-col gap-x-2 gap-y-4 mt-8">
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm "><i class="fa-brands fa-instagram"></i> INSTAGRAM</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm "><i class="fa-brands fa-twitter"></i> TWITTER</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm "><i class="fa-brands fa-behance"></i>
+                          BEHANCE</div>
+                      </a>
+                      <a class="flex flex-col mb-1" href="">
+                        <div class="text-sm "><i class="fa-brands fa-dribbble"></i>
+                          DRIBBLE</div>
+                      </a>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <li>
+            <a href="#" data-replace="LET'S TALK" class="anx block py-2 pl-3 pr-4 rounded-2xl tracking-wide text-white bg-black">
+              <span class="x">LET'S TALK</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 rounded-2xl   text-black hover:bg-gray-100 md:hover:bg-transparent md:border-0 bg-gray-100"><i
+                class="fa-solid fa-cart-shopping text-black"></i> 0</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar section end -->
+
+  <!-- hero section  -->
+  <div>
+    <div class="px-3">
+      <div class="">
+        <div class="grid md:grid-cols-2 md:p-10 gap-4 items-center gap-x-8 gap-y-8">
+          <div class="">
+            <h1 class="antialiased  font-light text-7xl md:text-main leading-h ">WE CREATE COOL BRANDS</h1>
+          </div>
+          <div class="md:ml-5 ">
+            <h1 class="text-2xl font-light">We're the masters of cool branding, crafting innovative strategies that make
+              businesses stand out.</h1>
+            <div class="flex gap-y-2 gap-x-2 font-light pt-4 flex-col">
+              <div class="gap-x-2">
+                <a data-replace="Branding" class=" anx rounded-2xl bg-gray-100  all" href="">
+                  <span class="x" >Branding</span>
+                </a>
+                <a data-replace="Digital" class=" anx rounded-2xl bg-gray-100 all" href=""><span class="x" >Digital</span></a>
+              </div>
+              <div class="gap-x-2">
+                <a data-replace="Marketing" class=" anx rounded-2xl bg-gray-100 all" href=""><span class="x" >Marketing</span></a>
+                <a data-replace="Social Media" class=" anx rounded-2xl bg-gray-100 all" href=""><span class="x" >Social Media</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- image section -->
+        <div class="grid  pt-8 gap-x-4 gap-y-4 md:grid-cols-17 ">
+
+          <img class="rounded-xl h-full" src="/img.webp" alt="">
+          <img class="rounded-xl" src="/img1.webp" alt="">
+
+        </div>
+      </div>
+
+      <div class="px-4">
+        <div class="pt-8">
+          <div class="flex justify-between px-2">
+            <h2 class="text-sm">OUR SERVICES</h2>
+            <a class="text-sm" href=""><i class="fa-solid fa-arrow-right"></i> ALL SERVICES</a>
+          </div>
+        </div>
+
+        <div class=" grid gap-y-4 gap-x-4 pt-8 md:grid-cols-2">
+          <a class="bg-gray-100 rounded-xl p-2" href="">
+            <div class="py-2 px-2 pt-4 ">
+              <h2 class="font-light text-2xl">BRANDING</h2>
+              <div class="font-light">Develop a unique and memorable identity that sets them apart in the marketplace.
+              </div>
+              <div class="flex gap-x-2 py-2 pt-8">
+                <div class=" bg-white rounded-xl all1">IDENTITY</div>
+                <div class=" bg-white rounded-xl all1">MESSAGING</div>
+                <div class=" bg-white rounded-xl all1 ">GUIDELINES</div>
+              </div>
+            </div>
+          </a>
+          <a class="bg-gray-100 rounded-xl p-2" href="">
+            <div class="py-2 px-2 pt-4 ">
+              <h2 class="font-light text-2xl">DIGITAL</h2>
+              <div class="font-light">Crafting digital strategies that leverage cutting-edge technology to drive
+                business engagement.</div>
+              <div class="flex gap-x-2 py-2 pt-8">
+                <div class=" bg-white rounded-xl all1">CONTENT</div>
+                <div class=" bg-white rounded-xl all1">SEO</div>
+                <div class=" bg-white rounded-xl all1">ADVERTISING</div>
+              </div>
+            </div>
+          </a>
+          <a class="bg-gray-100 rounded-xl p-2" href="">
+            <div class="py-2 px-2 pt-4 ">
+              <h2 class="font-light text-2xl">MARKETING</h2>
+              <div class="font-light">Help businesses reach their target audiences with compelling messaging and
+                effective campaigns.</div>
+              <div class="flex gap-x-2 py-2 pt-8">
+                <div class=" bg-white rounded-xl all1">CONTENT</div>
+                <div class=" bg-white rounded-xl all1">EMAIL</div>
+                <div class=" bg-white rounded-xl all1">EVENTS</div>
+              </div>
+            </div>
+          </a>
+          <a class="bg-gray-100 rounded-xl p-2" href="">
+            <div class="py-2 px-2 pt-4 ">
+              <h2 class="font-light text-2xl">SOCIAL MEDIA</h2>
+              <div class="font-light">We help businesses connect with customers, build their brand, and increase
+                engagement.</div>
+              <div class="flex gap-x-2 py-2 pt-8">
+                <div class=" bg-white rounded-xl all1">STRATEGY</div>
+                <div class=" bg-white rounded-xl all1">CONTENT</div>
+                <div class=" bg-white rounded-xl all1">ADVERTISING</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--  -->
+      <div class="px-4">
+        <div class="grid gap-x-8 gap-y-4 md:grid-cols-17">
+          <div class="">
+            <div class="pt-8">
+              <h2 class="p-2 text-sm">CATEGORY</h2>
+            </div>
+            <div class="flex gap-y-2 flex-col">
+              <a href="" alt class="flex justify-between bg-gray-100 rounded-lg card">
+                <div class="">
+                  BRANDING
+                </div>
+                <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </a>
+              <a href="" alt class="flex justify-between bg-gray-100 rounded-lg card">
+                <div class="">
+                  DIGITAL
+                </div>
+                <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </a>
+              <a href="" alt class="flex justify-between bg-gray-100 rounded-lg card">
+                <div class="">
+                  MARKETING
+                </div>
+                <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </a>
+              <a href="" alt class="flex justify-between bg-gray-100 rounded-lg card">
+                <div class="">
+                  SOCIAL MEDIA
+                </div>
+                <div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </a>
+            </div>
+            <!--  -->
+            <div class="pt-8 sticky">
+              <h2 class="tracking-wide text-sm">SELECTED WORK</h2>
+              <div class="flex gap-y-4 flex-col pt-4">
+                <a class="rounded-lg bg-gray-100" href="">
+                  <div class="p-2">
+                    <div class="grid gap-y-4 gap-x-4 grid-cols-17 md:grid-cols-17">
+                      <div class="">
+                        <img class="rounded-2xl md:p-3  object-cover h-full" src="/img2.webp" alt="">
+                      </div>
+                      <div class="flex items-start flex-col mt-1">
+                        <div class="">SIGN</div>
+                        <div class="font-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
+                          debitis.</div>
+                        <div class="flex items-center justify-center pt-4">
+                          <p class="bg-white text-black rounded-xl all" href="">BRANDING</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a class="rounded-lg bg-gray-100" href="">
+                  <div class="p-2">
+                    <div class="grid gap-y-4 gap-x-4 grid-cols-17 md:grid-cols-17">
+                      <div>
+                        <img class="rounded-2xl md:p-3 object-cover h-full" src="/img3.webp" alt="">
+                      </div>
+                      <div class="flex flex-col mt-1">
+                        <div class="">BAGG</div>
+                        <div class="font-light ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
+                          debitis.</div>
+                        <div class="flex items-center justify-center pt-4">
+                          <p class="bg-white text-black rounded-xl all" href="">SOCIAL MEDIA</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+                <div class="bg-black text-white rounded-lg">
+                  <div class="p-2">
+                    <h3 class="text-4xl pl-4 pt-4 ">ELEVATE YOUR BRAND TOWARDS SUCCESS</h3>
+                    <div class=" p-1">
+                      <a class="bg-white text-black block pb-4  text-center rounded-lg pt-4" href="">LET'S TALK</a>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="pt-8">
+              <h2 class="p-2 text-sm">LATEST WORK</h2>
+            </div>
+            <div class="grid gap-x-4 gap-y-4 md:grid-cols-2">
+              <div>
+                <a  class="group relative" href="">
+                  <img class="rounded-lg  " src="/img2.webp" alt="">
+                 <button class="transition transform 
+            translate-y-8  ease-in-out invisible 
+            absolute group-hover:visible mt-24 ml-4 p-23 md:p-25 bg-black
+            text-white rounded-md group-hover:translate-y-0">
+            EXPLORE
+        </button>
+                </a>
+                <div>
+                  <div class="flex justify-between pt-4">
+                    <a class="text-1xl font-light" href="">Sign</a>
+                    <a data-replace="BRANDING" class=" anx bg-gray-100 text-black  rounded-2xl all" href="">
+                      <span class="x">BRANDING</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a class="group relative" href="">
+                  <img class="rounded-lg" src="/img3.webp" alt="">
+                  <button class="transition transform 
+            translate-y-8 md:padd ease-in-out invisible 
+            absolute group-hover:visible mt-24 ml-4 p-23 md:p-25  bg-black
+            text-white rounded-md group-hover:translate-y-0">
+            EXPLORE
+        </button>
+                </a>
+                <div>
+                  <div class="flex justify-between pt-4">
+                    <a class="text-1xl font-light" href="">Bagg</a>
+                    <a data-replace="SOCIAL MEDIA" class="anx bg-gray-100 text-black  rounded-2xl all" href="">
+                      <span class="x">SOCIAL MEDIA</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a class="group relative" href="">
+                  <img class="rounded-lg" src="/img4.webp" alt="">
+                  <button class="transition transform 
+            translate-y-8  ease-in-out invisible 
+            absolute group-hover:visible mt-24 ml-4 p-23 md:p-25 bg-black
+            text-white rounded-md group-hover:translate-y-0">
+            EXPLORE
+        </button>
+                </a>
+                <div>
+                  <div class="flex justify-between pt-4">
+                    <a class="text-1xl font-light" href="">Evano</a>
+                    <a data-replace="DIGITAL" class="anx bg-gray-100 text-black  rounded-2xl all" href="">
+                      <span class="x">DIGITAL</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a class="group relative" href="">
+                  <img class="rounded-lg " src="/img5.webp" alt="">
+                  <div class="transition transform 
+            translate-y-8  ease-in-out invisible 
+            absolute group-hover:visible mt-24 ml-4 p-23 md:p-25 bg-black
+            text-white rounded-md group-hover:translate-y-0 ">
+            EXPLORE
+        </div>
+
+                </a>
+                <div>
+                  <div class="flex justify-between pt-4">
+                    <a class="text-1xl font-light" href="">Tatte</a>
+                    <a data-replace="MARKETING" class="bg-gray-100 text-black anx  rounded-2xl all" href="">
+                      <span class="x">Marketing</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!--  -->
+
+      <div class="p-2 mt-4">
+        <div class="flex gap-y-4 pb-4 gap-x-4 justify-between text-sm">
+          <h2 class="">OUR CLIENTS</h2>
+          <a href=""><i class="fa-solid fa-arrow-right-long"></i> ABOUT US</a>
+        </div>
+
+        <div class="grid md:grid-cols-13 gap-x-4 gap-y-4 ">
+          <div class="space bg-gray-100 rounded-xl">
+            <div class="pl-3 pt-4">
+              <img class="h-6"
+                src="https://assets.website-files.com/64426c1f54e5450712b7713b/64426c1f54e5450fb7b771c2_client-logo-03.svg"
+                alt="">
+            </div>
+            <div class="pl-3 pt-4 text-sm font-light">I've worked with many agencies, but none come close to the level
+              of professionalism and creativity that this team offers. Their attention to detail and ability to
+              understand our needs always surpasses our expectations.</div>
+            <div class="pl-3 pt-4">JOHN SMITH</div>
+            <div class="pl-3 text-xs text-gray-400">CEO OF DESIGNHUB</div>
+          </div>
+          <div class=" space bg-gray-100 rounded-xl">
+            <div class="pl-3 pt-4">
+              <img class="h-6"
+                src="https://assets.website-files.com/64426c1f54e5450712b7713b/64426c1f54e545118eb771c3_client-logo-02.svg"
+                alt="">
+            </div>
+            <div class="pl-3 pt-4 text-sm font-light">We were blown away by the exceptional service and support we
+              received from this agency. They helped us transform our brand and increase our online visibility, which
+              ultimately led to a significant increase in sales.</div>
+            <div class="pl-3 pt-4">MARY JOHNSON</div>
+            <div class="pl-3 text-xs text-gray-400">MARKETING MANAGER AT SUBSTACK</div>
+          </div>
+          <div class=" space bg-gray-100 rounded-xl">
+            <div class="pl-3 pt-4">
+              <img class="h-6"
+                src="https://assets.website-files.com/64426c1f54e5450712b7713b/64426c1f54e5456290b771c4_client-logo-06.svg"
+                alt="">
+            </div>
+            <div class="pl-3 pt-4 text-sm font-light">I highly recommend this agency to anyone looking for top-notch
+              branding and marketing services. Their team is knowledgeable, responsive, and always goes above and beyond
+              to ensure our satisfaction.</div>
+            <div class="pl-3 pt-4">ROBERT CHEN</div>
+            <div class="pl-3 text-xs text-gray-400">OWNER OF DESIGN ENTERPRISES</div>
+          </div>
+          <div class=" space bg-gray-100 rounded-xl">
+            <div class="pl-3 pt-4">
+              <img class="h-6"
+                src="https://assets.website-files.com/64426c1f54e5450712b7713b/64426c1f54e545329db771c0_client-logo-07.svg"
+                alt="">
+            </div>
+            <div class="pl-3 pt-4 text-sm font-light">The team at this agency is incredibly talented and dedicated. They
+              helped us launch a successful social media campaign that significantly increased our engagement and brand
+              awareness.</div>
+            <div class="pl-3 pt-4">SARAH LEE</div>
+            <div class="pl-3 text-xs text-gray-400">PR MANAGER AT DESIGN INC.</div>
+          </div>
+          <div class="space bg-gray-100 rounded-xl">
+            <div class="pl-3 pt-4">
+              <img class="h-6"
+                src="https://assets.website-files.com/64426c1f54e5450712b7713b/64426c1f54e545e627b771bf_client-logo-01.svg"
+                alt="">
+            </div>
+            <div class="pl-3 pt-4 text-sm font-light">Working with this agency was a game-changer for our business.
+              Their strategic approach and creative solutions helped us stand out in a crowded market and attract new
+              customers.</div>
+            <div class="pl-3 pt-4">DAVID NGUYEN</div>
+            <div class="pl-3 text-xs text-gray-400">OWNER OF BRDS</div>
+          </div>
+          <div class=" space  bg-gray-100 rounded-xl">
+            <div class="pl-3 pt-4">
+              <img class="h-6"
+                src="https://assets.website-files.com/64426c1f54e5450712b7713b/64426c1f54e5459ca4b771c1_client-logo-04.svg"
+                alt="">
+            </div>
+            <div class="pl-3 pt-4 text-sm font-light">I've had the pleasure of collaborating with this agency on several
+              projects, and I'm consistently impressed with their professionalism and expertise. They're a trusted
+              partner and always deliver outstanding results.</div>
+            <div class="pl-3 pt-4">SUSAN KIM
+            </div>
+            <div class="pl-3 text-xs text-gray-400">MARKETING DIRECTOR AT GHI</div>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+      <div class="px-4">
+        <div class="p-2">
+          <div class="bg-black text-white rounded-lg p-2  md:p-4">
+            <div class="grid  gap-y-4 gap-x-4  p-7 md:grid-cols-auto items-end">
+              <div class=" md:pl-3">
+                <div class=" text-4xl tracking-wider md:text-6xl md:mb-2  font-light">LET'S BRAND</div>
+                <div class=" md:w-3 text-gray-400 text-xl">Let's create an unforgettable brand experience together.
+                  Start your journey now.</div>
+              </div>
+              <div class="text-center">
+                <a data-replace="GET IN TOUCH " class="anx2 bg-white text-sm rounded-2xl p-3 text-black" href=""><i
+                    class="fa-solid fa-arrow-up"></i> <span class="x"> GET IN TOUCH </span></a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="px-4">
+        <div class="p-2 mt-4">
+          <div class="flex gap-y-4 pb-4 gap-x-4 justify-between text-sm">
+            <h2 class="">OUR CLIENTS</h2>
+            <a href=""><i class="fa-solid fa-arrow-right-long"></i> ABOUT US</a>
+          </div>
+        </div>
+        <div class="grid gap-x-4 gap-y-4 md:grid-cols-14 mb-3">
+          <div>
+            <a class="block" href="">
+              <img class="rounded-lg" src="/img6.webp" alt="">
+            </a>
+            <div class=" pr-2 pl-2">
+              <a class="m-1" href="">
+                <h3 class="text-xl">The Power of Storytelling in Branding</h3>
+              </a>
+              <div class="mb-2 tex text-gray-400 ">Storytelling is a powerful tool for building brand identity and
+                connecting with audiences.</div>
+              <a data-replace="SOCIAL MEDIA" class="anx bg-gray-100 rounded-xl all " href="">
+                <span class="x">SOCIAL MEDIA</span>
+              </a>
+            </div>
+          </div>
+          <div>
+            <a class="block" href="">
+              <img class="rounded-lg" src="/img7.webp" alt="">
+            </a>
+            <div class=" pr-2 pl-2">
+              <a class="m-1" href="">
+                <h3 class="text-xl">Maximizing Your Social Media Strategy</h3>
+              </a>
+              <div class="mb-2 text text-gray-400 ">Social media can be a powerful tool for connecting with your
+                audience and building your brand.</div>
+              <a data-replace="BRANDING" class="anx bg-gray-100 rounded-xl all " href="">
+                <span class="x">BRANDING</span>
+              </a>
+            </div>
+          </div>
+          <div>
+            <a class="block" href="">
+              <img class="rounded-lg" src="/img9.webp" alt="">
+            </a>
+            <div class=" pr-2 pl-2">
+              <a class="m-1" href="">
+                <h3 class="text-xl">Maximizing Social Media Engagement</h3>
+              </a>
+              <div class="mb-2 text text-gray-400 ">Unlock the secrets to boosting your social media engagement and
+                growing your audience.</div>
+              <a data-replace="DIGITAL" class="anx bg-gray-100 rounded-xl all" href="">
+                <span class="x">DIGITAL</span>
+              </a>
+            </div>
+          </div>
+          <div>
+            <a class="block" href="">
+              <img class="rounded-lg" src="/img8.webp" alt="">
+            </a>
+            <div class=" pr-2 pl-2">
+              <a class="m-1" href="">
+                <h3 class="text-xl">The Importance of Visual Identity in Branding</h3>
+              </a>
+              <div class="mb-2 text text-gray-400 ">Your brand's visual identity is often the first impression that
+                potential customers have of your business.</div>
+              <a data-replace="BRANDING" class="anx bg-gray-100 rounded-xl all" href="">
+                <span class="x">BRANDING</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="px-4">
+        <div class="bg-black text-white rounded-lg">
+          <div class="p-7">
+            <div class="grid gap-y-4 gap-x-4 md:grid-cols-auto items-center">
+
+              <div class=" text-gray-500">NEWSLETTER
+                <div class="text-2xl text-white">GET THE INSIDE SCOOP ON INDUSTRY TRENDS</div>
+              </div>
+              <div class="grid md:items-center md:grid-cols-15 gap-x-2 gap-y-2 ">
+                <div class="">
+                  <input type="email" class="form-input is-newsletter w-input text-black bg-slate-700 p-3 rounded-md"
+                    maxlength="256" name="Newsletter-Email" data-name="Newsletter Email" placeholder="Your Email"
+                    id="Newsletter-Email-2" required="">
+                </div>
+                <div class="">
+                  <input type="submit" value="SUBSCRIBE" data-wait="Please wait..."
+                    class="button inverse-primary w-button font-light bg-white text-black rounded-md p-3">
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="px-4">
+
+          <div>
+            <div class="mt-2 mb-2">
+              <div class="grid gap-x-3 gap-y-3 md:grid-cols-14">
+                <a class='flex justify-between rounded-lg bg-gray-400 card' href="">
+                  <div class="flex items-baseline gap-x-4 justify-start">
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                    <div class="tracking-wide">INSTAGRAM</div>
+                  </div>
+                  <div><i class="fa-solid fa-arrow-right"></i></div>
+                </a>
+                <a class='flex justify-between rounded-lg bg-gray-400 card' href="">
+                  <div class="flex items-baseline gap-x-4 justify-start">
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div class="tracking-wide">TWITTER</div>
+                  </div>
+                  <div><i class="fa-solid fa-arrow-right"></i></div>
+                </a>
+                <a class='flex justify-between rounded-lg bg-gray-400 card' href="">
+                  <div class="flex items-baseline gap-x-4 justify-start">
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div class="tracking-wide">FACEBOOK</div>
+                  </div>
+                  <div><i class="fa-solid fa-arrow-right"></i></div>
+                </a>
+                <a class='flex justify-between rounded-lg bg-gray-400 card' href="">
+                  <div class="flex items-baseline gap-x-4 justify-start">
+                    <div><i class="fa-brands fa-behance"></i></div>
+                    <div class="tracking-wide">BEHANCE</div>
+                  </div>
+                  <div><i class="fa-solid fa-arrow-right"></i></div>
+                </a>
+
+              </div>
+
+            </div>
+            <div class="grid gap-x-4 gap-y-4 md:grid-cols-16 mb-2">
+              <div class="flex justify-between flex-col h-full rounded-lg bg-gray-400 p-6">
+                <div class="mb-4">
+                  <a class="inline-block" href="">
+                    <img
+                      src="https://assets.website-files.com/64426c1f54e5450712b7713b/64426e865588e4677c26dfc9_logo.svg"
+                      alt="">
+                  </a>
+                </div>
+                <div>
+                  <div class=" mb-2">
+                    <a class="bg-black rounded-3xl text-sm p-3 text-white" href="">MORE TEMPLATES <i
+                        class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="text-xs">© 2022 MADE BY PAWEL GOLA. POWERED BY WEBFLOW.</div>
+                </div>
+              </div>
+              <div class="rounded-lg bg-gray-400">
+                <div class="p-6">
+                  <div class="grid gap-x-4 gap-y-4 md:grid-cols-13 ">
+                    <div class=" side">
+                      <div class="">
+                        <h3 class="text-xl ">PAGES</h3>
+                      </div>
+                      <div class="flex flex-col gap-x-2 gap-y-2 mt-4">
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid">HOME</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid4">SERVICES</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid">ABOUT</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid">JOBS</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid4">CONTACT</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="">
+                      <div class="">
+                        <h3 class="text-xl">CMS</h3>
+                      </div>
+                      <div class="flex flex-col gap-x-2 gap-y-2 mt-4">
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid">WORK</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid5">WORK SINGLE</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid">BLOG</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid5">BLOG SINGLE</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid">SHOP</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid5">SHOP SINGLE</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="">
+                      <div class="">
+                        <h3 class="text-xl">UTILITY PAGES</h3>
+                      </div>
+                      <div class="flex flex-col gap-x-2 gap-y-2 mt-4">
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid1">404 ERROR PAGE</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid3">PASSWORD PROTECTED</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid2">
+                            STYLEGUIDE</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid2">
+                            LICENSING</div>
+                        </a>
+                        <a class="flex flex-col mb-1" href="">
+                          <div class="text-sm hover:divide-solid2">
+                            CHANGELOG
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+</html>

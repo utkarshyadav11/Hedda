@@ -1,0 +1,72 @@
+.anx {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.anx::before,
+.anx::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 13%;
+}
+
+.anx::before {
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.anx::after {
+  content: attr(data-replace);
+  transform: translate3d(0, 200%, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.anx:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.anx .x {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.anx:hover .x {
+  transform: translate3d(0%, -200%, 0);
+}
+/*  */
+
+.anx2 {
+      overflow: hidden;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .anx2::before,
+    .anx2::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 5%;
+    }
+    
+    .anx2::before {
+      transform: scaleX(0);
+      transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+    .anx2::after {
+      content: attr(data-replace);
+      transform: translate3d(0, 200%, 0);
+      transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+    .anx2:hover::after {
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .anx2 .x {
+      display: inline-block;
+      transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+    
+    .anx2:hover .x {
+      transform: translate3d(0%, -200%, 0);
+    }
